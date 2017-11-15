@@ -1,4 +1,4 @@
-package Product;
+package FactoryMethod.Product;
 
 /**
  * Created by dvsta on 15.11.2017.

@@ -1,7 +1,7 @@
-import Creator.DagitalWatchMaker;
-import Creator.RomeWatchMaker;
-import Creator.WatchMaker;
-import Product.Watch;
+import FactoryMethod.Creator.DagitalWatchMaker;
+import FactoryMethod.Creator.RomeWatchMaker;
+import FactoryMethod.Creator.WatchMaker;
+import FactoryMethod.Product.Watch;
 
 /**
  * Created by dvsta on 15.11.2017.

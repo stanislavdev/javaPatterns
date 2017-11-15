@@ -1,8 +1,8 @@
-package Creator;
+package FactoryMethod.Creator;
 
 
-import Product.DigitalWatch;
-import Product.Watch;
+import FactoryMethod.Product.DigitalWatch;
+import FactoryMethod.Product.Watch;
 
 /**
  * Created by dvsta on 15.11.2017.

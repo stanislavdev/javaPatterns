@@ -1,4 +1,4 @@
-package Product;
+package FactoryMethod.Product;
 
 import java.util.Date;
 
