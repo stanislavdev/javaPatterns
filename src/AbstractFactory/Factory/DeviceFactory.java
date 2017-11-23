@@ -1,4 +1,8 @@
-package AbstractFactory;
+package AbstractFactory.Factory;
+
+import AbstractFactory.Products.Keyboard;
+import AbstractFactory.Products.Mouse;
+import AbstractFactory.Products.Touchpad;
 
 /**
  * Created by dvsta on 23.11.2017.

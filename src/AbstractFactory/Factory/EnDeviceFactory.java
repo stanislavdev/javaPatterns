@@ -1,4 +1,6 @@
-package AbstractFactory;
+package AbstractFactory.Factory;
+
+import AbstractFactory.Products.*;
 
 /**
  * Created by dvsta on 23.11.2017.

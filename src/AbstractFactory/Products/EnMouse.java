@@ -1,6 +1,4 @@
-package AbstractFactory;
-
-import java.awt.peer.MouseInfoPeer;
+package AbstractFactory.Products;
 
 /**
  * Created by dvsta on 23.11.2017.
