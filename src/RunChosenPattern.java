@@ -4,11 +4,14 @@ import CreationalPatterns.AbstractFactory.Factory.RuDeviceFactory;
 import CreationalPatterns.AbstractFactory.Products.Keyboard;
 import CreationalPatterns.AbstractFactory.Products.Mouse;
 import CreationalPatterns.AbstractFactory.Products.Touchpad;
+import CreationalPatterns.Builder.Car;
+import CreationalPatterns.Builder.Director;
+import CreationalPatterns.Builder.FordBuilder;
 import CreationalPatterns.FactoryMethod.Creator.DagitalWatchMaker;
 import CreationalPatterns.FactoryMethod.Creator.RomeWatchMaker;
 import CreationalPatterns.FactoryMethod.Creator.WatchMaker;
 import CreationalPatterns.FactoryMethod.Product.Watch;
-import CreationalPatterns.SimpleBuilder.Car;
+import CreationalPatterns.SimpleBuilder.SimpleCar;
 import CreationalPatterns.SimpleBuilder.CarBuilder;
 
 /**
@@ -55,11 +58,21 @@ public class RunChosenPattern {
      * The instance of Simple Builder
      */
     public void runSimpleBuilder(){
-        Car car = new CarBuilder()
+        SimpleCar car = new CarBuilder()
                 .buildMaker("BMW")
                 .buildMaxSpeed(300)
-                .buildTransmission(Car.Transmission.AUTO)
+                .buildTransmission(SimpleCar.Transmission.AUTO)
                 .build();
+        System.out.println(car.toString());
+    }
+
+    /**
+     * The instance of Builder
+     */
+    public void runBuilder(){
+        Director director = new Director();
+        director.setBuilder(new FordBuilder());
+        Car car = director.buildCar();
         System.out.println(car.toString());
     }
 }

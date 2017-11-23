@@ -6,6 +6,7 @@ public class Main {
         RunChosenPattern runChosenPattern = new RunChosenPattern();
 //        runChosenPattern.runFactoryMethod();
 //        runChosenPattern.runAbstractFactory("EN");
-        runChosenPattern.runSimpleBuilder();
+//        runChosenPattern.runSimpleBuilder();
+        runChosenPattern.runBuilder();
     }
 }

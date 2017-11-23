@@ -5,7 +5,7 @@ package CreationalPatterns.SimpleBuilder;
  */
 public class CarBuilder {
     String maker = "Default";
-    Car.Transmission transmission = Car.Transmission.MANUAL;
+    SimpleCar.Transmission transmission = SimpleCar.Transmission.MANUAL;
     int maxSpeed = 120;
 
     public CarBuilder buildMaker(String maker) {
@@ -13,7 +13,7 @@ public class CarBuilder {
         return this;
     }
 
-    public CarBuilder buildTransmission(Car.Transmission transmission) {
+    public CarBuilder buildTransmission(SimpleCar.Transmission transmission) {
         this.transmission = transmission;
         return this;
     }
@@ -23,11 +23,11 @@ public class CarBuilder {
         return this;
     }
 
-    public Car build() {
-        Car car = new Car();
-        car.setMaker(maker);
-        car.setMaxSpeed(maxSpeed);
-        car.setTransmission(transmission);
-        return car;
+    public SimpleCar build() {
+        SimpleCar simpleCar = new SimpleCar();
+        simpleCar.setMaker(maker);
+        simpleCar.setMaxSpeed(maxSpeed);
+        simpleCar.setTransmission(transmission);
+        return simpleCar;
     }
 }

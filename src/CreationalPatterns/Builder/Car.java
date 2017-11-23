@@ -1,4 +1,4 @@
-package CreationalPatterns.SimpleBuilder;
+package CreationalPatterns.Builder;
 
 /**
  * Created by dvsta on 23.11.2017.
