@@ -10,11 +10,14 @@ public class Director {
         this.builder = builder;
     }
 
-    public Car buildCar() {
+    public Car getCar() {
+        return builder.getCar();
+    }
+
+    public void buildCar() {
         builder.createCar();
         builder.buildMaker();
         builder.buildMaxSpeed();
         builder.buildTransmission();
-        return builder.getCar();
     }
 }

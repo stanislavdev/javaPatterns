@@ -20,8 +20,6 @@ public class Car {
         this.maxSpeed = maxSpeed;
     }
 
-    public enum Transmission {MANUAL, AUTO}
-
     @Override
     public String toString() {
         return "Car{" +
@@ -30,4 +28,6 @@ public class Car {
                 ", maxSpeed=" + maxSpeed +
                 '}';
     }
+
+    public enum Transmission {MANUAL, AUTO}
 }
