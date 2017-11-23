@@ -1,4 +1,4 @@
-package FactoryMethod.Product;
+package CreationalPatterns.FactoryMethod.Product;
 
 import java.util.Date;
 

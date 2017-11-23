@@ -1,6 +1,6 @@
-package AbstractFactory.Factory;
+package CreationalPatterns.AbstractFactory.Factory;
 
-import AbstractFactory.Products.*;
+import CreationalPatterns.AbstractFactory.Products.*;
 
 /**
  * Created by dvsta on 23.11.2017.

@@ -1,8 +1,8 @@
-package FactoryMethod.Creator;
+package CreationalPatterns.FactoryMethod.Creator;
 
 
-import FactoryMethod.Product.RomeWatch;
-import FactoryMethod.Product.Watch;
+import CreationalPatterns.FactoryMethod.Product.RomeWatch;
+import CreationalPatterns.FactoryMethod.Product.Watch;
 
 /**
  * Created by dvsta on 15.11.2017.

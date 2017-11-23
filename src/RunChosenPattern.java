@@ -1,13 +1,15 @@
-import AbstractFactory.Factory.DeviceFactory;
-import AbstractFactory.Factory.EnDeviceFactory;
-import AbstractFactory.Factory.RuDeviceFactory;
-import AbstractFactory.Products.Keyboard;
-import AbstractFactory.Products.Mouse;
-import AbstractFactory.Products.Touchpad;
-import FactoryMethod.Creator.DagitalWatchMaker;
-import FactoryMethod.Creator.RomeWatchMaker;
-import FactoryMethod.Creator.WatchMaker;
-import FactoryMethod.Product.Watch;
+import CreationalPatterns.AbstractFactory.Factory.DeviceFactory;
+import CreationalPatterns.AbstractFactory.Factory.EnDeviceFactory;
+import CreationalPatterns.AbstractFactory.Factory.RuDeviceFactory;
+import CreationalPatterns.AbstractFactory.Products.Keyboard;
+import CreationalPatterns.AbstractFactory.Products.Mouse;
+import CreationalPatterns.AbstractFactory.Products.Touchpad;
+import CreationalPatterns.FactoryMethod.Creator.DagitalWatchMaker;
+import CreationalPatterns.FactoryMethod.Creator.RomeWatchMaker;
+import CreationalPatterns.FactoryMethod.Creator.WatchMaker;
+import CreationalPatterns.FactoryMethod.Product.Watch;
+import CreationalPatterns.SimpleBuilder.Car;
+import CreationalPatterns.SimpleBuilder.CarBuilder;
 
 /**
  * Created by dvsta on 23.11.2017.
@@ -41,13 +43,23 @@ public class RunChosenPattern {
             default:
                 throw new RuntimeException("Sorry, without language " + language);
         }
-
         Mouse mouse = deviceFactory.getMouse();
         Keyboard keyboard = deviceFactory.getKeyboard();
         Touchpad touchpad = deviceFactory.getTouchpad();
-
         mouse.click();
         keyboard.print();
-        touchpad.track(10,15);
+        touchpad.track(10, 15);
+    }
+
+    /**
+     * The instance of Simple Builder
+     */
+    public void runSimpleBuilder(){
+        Car car = new CarBuilder()
+                .buildMaker("BMW")
+                .buildMaxSpeed(300)
+                .buildTransmission(Car.Transmission.AUTO)
+                .build();
+        System.out.println(car.toString());
     }
 }

@@ -1,4 +1,4 @@
-package FactoryMethod.Product;
+package CreationalPatterns.FactoryMethod.Product;
 
 /**
  * Created by dvsta on 15.11.2017.
