@@ -7,6 +7,7 @@ public class Main {
 //        runChosenPattern.runFactoryMethod();
 //        runChosenPattern.runAbstractFactory("EN");
 //        runChosenPattern.runSimpleBuilder();
-        runChosenPattern.runBuilder();
+//        runChosenPattern.runBuilder();
+        runChosenPattern.runPrototype();
     }
 }

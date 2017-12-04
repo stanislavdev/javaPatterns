@@ -10,6 +10,8 @@ import CreationalPatterns.FactoryMethod.Creator.DagitalWatchMaker;
 import CreationalPatterns.FactoryMethod.Creator.RomeWatchMaker;
 import CreationalPatterns.FactoryMethod.Creator.WatchMaker;
 import CreationalPatterns.FactoryMethod.Product.Watch;
+import CreationalPatterns.Prototype.Human;
+import CreationalPatterns.Prototype.HumanFactory;
 import CreationalPatterns.SimpleBuilder.CarBuilder;
 import CreationalPatterns.SimpleBuilder.SimpleCar;
 
@@ -73,5 +75,16 @@ public class RunChosenPattern {
         director.setBuilder(new FordBuilder());
         director.buildCar();
         System.out.println(director.getCar().toString());
+    }
+
+    /**
+     * The instance of Builder
+     */
+    public void runPrototype(){
+        Human human = new Human(20, "John");
+        HumanFactory humanFactory = new HumanFactory(human);
+        Human human1 = humanFactory.makeCopy();
+        System.out.println(human);
+        System.out.println(human1);
     }
 }
