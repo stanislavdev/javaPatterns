@@ -78,7 +78,7 @@ public class RunChosenPattern {
     }
 
     /**
-     * The instance of Builder
+     * The instance of Prototype
      */
     public void runPrototype(){
         Human human = new Human(20, "John");
