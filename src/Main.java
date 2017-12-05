@@ -8,6 +8,7 @@ public class Main {
 //        runChosenPattern.runAbstractFactory("EN");
 //        runChosenPattern.runSimpleBuilder();
 //        runChosenPattern.runBuilder();
-        runChosenPattern.runPrototype();
+//        runChosenPattern.runPrototype();
+        runChosenPattern.runSingleton();
     }
 }

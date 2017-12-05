@@ -14,6 +14,8 @@ import CreationalPatterns.Prototype.Human;
 import CreationalPatterns.Prototype.HumanFactory;
 import CreationalPatterns.SimpleBuilder.CarBuilder;
 import CreationalPatterns.SimpleBuilder.SimpleCar;
+import CreationalPatterns.Singleton.R;
+import CreationalPatterns.Singleton.Singleton;
 
 /**
  * Created by dvsta on 23.11.2017.
@@ -86,5 +88,24 @@ public class RunChosenPattern {
         Human human1 = humanFactory.makeCopy();
         System.out.println(human);
         System.out.println(human1);
+    }
+
+    /**
+     * The instance of Singleton
+     */
+    public void runSingleton()  {
+        Thread thread = new Thread(new R());
+        thread.start();
+        Thread thread1 = new Thread(new R());
+        try {
+            thread1.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Singleton singleton = Singleton.getInstance();
+        Singleton singleton1 = Singleton.getInstance();
+
+        System.out.println(Singleton.counter);
     }
 }
